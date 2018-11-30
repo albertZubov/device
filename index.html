@@ -7,7 +7,7 @@
 <body>
 	<header class="main-header container">
 		<nav class="main-navigation">
-			<a class="main-header-logo">Device</a>
+			<a class="sign header-logo">Device</a>
 			<form action="#0" method="post">
 				<input name="search" placeholder="Поиск по сайту" type="search">
 				<button type="submit">Отправить</button>
@@ -15,8 +15,8 @@
 			<ul class="user-navigation">
 				<li>
 					<a class="login-link" href="login.html">Войти</a></li>
-					<li class="comparison-link">Сравнить</li>
-					<li class="basket-link">Корзина</li>
+					<li><a class="comparison-link" href="#0"></a> Сравнить</li>
+					<li><a class="basket-link" href="#0"></a>Корзина</li>
 				</ul>	
 				<ul class="site-navigation">
 					<li class="site-navigation-icon"><a href="#0">Каталог товаров</a>
@@ -37,6 +37,14 @@
 		</header>
 		<main class="main-contents">
 			<section class="advertisement container">
+				<div class="slide-radio">
+					<input class="visually-hidden" type="radio" name="sliders" id="selfi">
+					<label for="selfi">Селфи-палка</label>
+					<input class="visually-hidden" type="radio" name="sliders" id="bracelet">
+					<label for="bracelet">Фитнес-браслет</label>
+					<input class="visually-hidden" type="radio" name="sliders" id="quadcopter">
+					<label for="quadcopter">Квадракоптер</label>
+				</div>
 				<div class="slide">
 					<div class="picture">
 						<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -47,11 +55,11 @@
 							Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
 						</p>
 						<a href="#0">Подробнее</a>
-						<ul class="contents-navigation">
+<!-- 						<ul class="contents-navigation">
 							<li></li>
 							<li></li>
 							<li></li>
-						</ul>
+						</ul> -->
 						<ul class="detailed-description">
 							<li>8.5 м
 								<span>Длина палки</span>
@@ -75,11 +83,12 @@
 							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
 						</p>
 						<a href="#0">Подробнее</a>
-						<ul class="contents-navigation">
+
+<!-- 						<ul class="contents-navigation">
 							<li></li>
 							<li></li>
 							<li></li>
-						</ul>
+						</ul> -->
 						<ul class="detailed-description">
 							<li>48 часов
 								<span>Без подзарядки</span>
@@ -97,11 +106,11 @@
 							Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным под стандартную камеру.
 						</p>
 						<a href="#0">Подробнее</a>
-						<ul class="contents-navigation">
+<!-- 						<ul class="contents-navigation">
 							<li></li>
 							<li></li>
 							<li></li>
-						</ul>
+						</ul> -->
 						<ul class="detailed-description">
 							<li>800 м
 								<span>Дальность полета</span>
@@ -116,7 +125,7 @@
 			<section class="products container">
 				<ul class="catalog-products">
 					<li class="visual-icon">Визуальная реальность</li>
-					<li class="monopod-icon">Монопады для селфи</li>
+					<li class="monopod-icon">Монопады для селфи<a></a></li>
 					<li class="camera-icon">Экшн-камеры</li>
 					<li class="bracelet-icon">Фитнес-браслеты</li>
 					<li class="watch-icon">Умные часы</li>
@@ -178,8 +187,7 @@
 		<footer class="main-footer">
 			<div class="cellar-site container">
 				<div class="user-footer"> 
-					<a class="main-footer-logo"><img src="img/logo-j.png" width="149" height="52" alt="Логотип DEVICE">
-					</a>
+					<a class="sign footer-logo">Device</a>
 					<ul class="user-footer-navigation">
 						<li><a class="login-link" href="login.html">Войти</a></li>
 						<li class="comparison-link">Сравнить</li>
@@ -196,11 +204,11 @@
 					<p>Тел. +7(495)495-95-95</p>
 				</div>
 				<div class="footer-social">
-					<a class="social-button faceb-icon" href="#0">Фейсбук</a>
-					<a class="social-button insta-icon" href="#0">Инстаграм</a>
-					<a class="social-button twit-icon" href="#0">Твиттер</a>
+					<a class="social-button facebook-icon" href="#0">Фейсбук<img src="instagram.svg" alt="Фейсбук"></a>
+					<a class="social-button instagram-icon" href="#0">Инстаграм<img src="fb.svg" alt="Инстаграмм"></a>
+					<a class="social-button twitter-icon" href="#0">Твиттер<img src="twitter.svg" alt="Твиттер"></a>
 				</div>
-				<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" width="111" height="24" alt="Логотип Академии"></a>
+				<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" alt="Логотип Академии"></a>
 			</div>
 		</footer>
 		<section class="modal modal-contact">
