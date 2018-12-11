@@ -1,0 +1,246 @@
+@font-face {
+	font-family: 'gilroyextrabold';
+	src: url('../fonts/10871-webfont.woff2') format('woff2'),
+	url('../fonts/10871-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
+/*Шрифт gilroy*/
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	background-color: #ffffff;
+
+}
+.main-navigation {
+	background-color: #f7e296;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(0,0,0,1);
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+}
+.user-navigation, .search-form {
+	font-size: 15px;
+	line-height: 30px;
+	color: rgba(0,0,0,1);
+	text-transform: none;
+}
+.site-navigation {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	letter-spacing: 3.6px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.site-navigation,
+.user-navigation,
+.catalog {
+	list-style: none;
+}
+.site-navigation a,
+.user-navigation a, 
+.catalog a,
+.contents a {
+	color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.catalog a:hover,
+.catalog a:focus { 
+	color: rgba(0,0,0,0.6);
+}
+
+.contents h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+	color: rgba(0,0,0,1);
+}
+.detailed-description {
+	list-style: none;
+}
+.contents a,
+.information a,
+.сontacts a,
+.modal-contact .button,
+.footer-conditions-working {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: 3.6px;
+	background: url("../img/layer7.png") no-repeat center center;
+}
+.footer-conditions-working {
+	color: #ffffff;
+	background: transparent;
+}
+.detailed-description li {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+.detailed-description li span {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+.catalog-products {
+	list-style: none;
+	font-family: "gilroyextrabold", Arial, sans-serif;
+
+}
+
+.catalog-products li {
+	width: 160px;
+	height: 160px;
+	background-color: #f7e296;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 10px;
+
+}
+.visual-icon {
+	background: url(../img/popular-1.svg) no-repeat center center;
+}
+.monopod-icon {
+	background: url(../img/popular-2.svg) no-repeat center bottom;
+}
+.camera-icon {
+	background: url(../img/popular-3.svg) no-repeat center center;
+}
+.bracelet-icon {
+	background: url(../img/popular-4.svg) no-repeat center center;
+}
+.watch-icon {
+	background: url(../img/popular-5.svg) no-repeat center center;
+}
+.quadcopters-icon {
+	background: url(../img/popular-6.svg) no-repeat center center;
+}
+
+.conditions-working {
+	background-color: #e5e5e5;
+}
+.briefly-conditions ul {
+	list-style: none;
+}
+.briefly-conditions ul li {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 3.6px;
+	width: 278px;
+	height: 40px;
+	vertical-align: middle;
+
+}
+.briefly-conditions ul .active {
+	background-color: #000000;
+	color: #f7e184;
+}
+.contents-conditions {
+	height: auto;
+}
+
+.contents-conditions h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+.stils-icon-delivery {
+	background: url(../img/delivery.svg) no-repeat right center;
+}
+.partners {
+	opacity: 0.2;
+}
+.information h2, .сontacts h2 {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.information ul {
+	list-style: none;
+}
+.information ul li {
+	font-weight: bold;
+}
+.cellar-site {
+	background-color: #464646;
+	color: #ffffff;
+}
+
+.sign {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	color: #ffc600;
+	text-decoration: none;
+	font-size: 48px;
+	line-height: auto;
+}
+.header-logo {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	color: #000000;
+}
+.user-footer-navigation, .footer-conditions-working {
+	list-style: none;
+}
+.user-footer-navigation a {
+	color: #ffffff;
+}
+.user-footer-navigation li {
+	text-align: right;
+}
+.footer-conditions-working li, .footer-social {
+	text-align: center;
+}
+.modal-contact {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.modal-contact input[type="text"],
+.modal-contact input[type="email"],
+.modal-contact textarea {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	background-color: #f2f2f2;
+	width: 360px;
+	height: 50px;
+	padding-left: 10px;
+}
+.modal-contact textarea {
+	width:760px;
+	height:156px;
+}
+
+.login-form input:focus {
+	border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+	color: #663d15;
+}
+.modal-contact .button {
+	background: transparent;
+	border:none;
+	background: url("../img/layer7.png") no-repeat center center;
+}
