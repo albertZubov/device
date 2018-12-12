@@ -1,10 +1,14 @@
 @font-face {
-	font-family: 'gilroyextrabold';
-	src: url('../fonts/10871-webfont.woff2') format('woff2'),
-	url('../fonts/10871-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroylight.woff2') format('woff2'), url('../fonts/Gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroyextrabold.woff2') format('woff2'), url('../fonts/Gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
 }
 /*Шрифт gilroy*/
 
@@ -36,7 +40,8 @@ a {
 	text-transform: none;
 }
 .site-navigation {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	letter-spacing: 3.6px;
 	font-size: 18px;
 	line-height: 24px;
@@ -59,11 +64,20 @@ a {
 .user-navigation a:focus,
 .catalog a:hover,
 .catalog a:focus { 
-	color: rgba(0,0,0,0.6);
+	opacity: 0.6;
+}
+.site-navigation a:active,
+.site-navigation a:active,
+.user-navigation a:active,
+.user-navigation a:active,
+.catalog a:active,
+.catalog a:active { 
+	opacity: 0.3;
 }
 
 .contents h2 {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 56px;
 	color: rgba(0,0,0,1);
@@ -76,7 +90,8 @@ a {
 .сontacts a,
 .modal-contact .button,
 .footer-conditions-working {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -84,12 +99,39 @@ a {
 	letter-spacing: 3.6px;
 	background: url("../img/layer7.png") no-repeat center center;
 }
+.contents a:hover,
+.information a:hover,
+.сontacts a:hover,
+.modal-contact .button:hover,
+.footer-conditions-working:hover {
+	display: inline-block;
+	width: 220px;
+	height: 40px;
+	background-color: #f0c52e;
+	text-align: center;
+	line-height: 40px;
+}
+.contents a:active,
+.information a:active,
+.сontacts a:active,
+.modal-contact .button:active,
+.footer-conditions-working:active {
+	display: inline-block;
+	width: 220px;
+	height: 40px;
+	background-color: #f0c52e;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(0,0,0,0.6);
+}
+
 .footer-conditions-working {
 	color: #ffffff;
 	background: transparent;
 }
 .detailed-description li {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 300;
 	font-size: 36px;
 	line-height: 48px;
 }
@@ -100,7 +142,8 @@ a {
 }
 .catalog-products {
 	list-style: none;
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 
 }
 
@@ -111,25 +154,32 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	margin: 10px;
-
 }
+.catalog-products li:hover {
+	background-color: #f0c52e;
+}
+.commodity:active {
+	background-color: #f0c52e;
+	opacity: 0.3;
+}
+
 .visual-icon {
-	background: url(../img/popular-1.svg) no-repeat center center;
+	background: url(../img/visual-icon.svg) no-repeat center center;
 }
 .monopod-icon {
-	background: url(../img/popular-2.svg) no-repeat center bottom;
+	background: url(../img/monopod-icon.svg) no-repeat center bottom;
 }
 .camera-icon {
-	background: url(../img/popular-3.svg) no-repeat center center;
+	background: url(../img/camera-icon.svg) no-repeat center center;
 }
 .bracelet-icon {
-	background: url(../img/popular-4.svg) no-repeat center center;
+	background: url(../img/bracelet-icon.svg) no-repeat center center;
 }
 .watch-icon {
-	background: url(../img/popular-5.svg) no-repeat center center;
+	background: url(../img/watch-icon.svg) no-repeat center center;
 }
 .quadcopters-icon {
-	background: url(../img/popular-6.svg) no-repeat center center;
+	background: url(../img/quadcopters-icon.svg) no-repeat center center;
 }
 
 .conditions-working {
@@ -139,7 +189,8 @@ a {
 	list-style: none;
 }
 .briefly-conditions ul li {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	text-transform: uppercase;
 	font-size: 18px;
 	line-height: 24px;
@@ -158,7 +209,8 @@ a {
 }
 
 .contents-conditions h2 {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 }
@@ -169,7 +221,8 @@ a {
 	opacity: 0.2;
 }
 .information h2, .сontacts h2 {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	font-size: 47px;
 	line-height: 48px;
 }
@@ -186,16 +239,24 @@ a {
 }
 
 .sign {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	color: #ffc600;
 	text-decoration: none;
 	font-size: 48px;
-	line-height: auto;
 }
 .header-logo {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	color: #000000;
 }
+.header-logo:hover {
+	opacity: 0.6;
+}
+.header-logo:active {
+	opacity: 0.3;
+}
+
 .user-footer-navigation, .footer-conditions-working {
 	list-style: none;
 }
@@ -209,7 +270,8 @@ a {
 	text-align: center;
 }
 .modal-contact {
-	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
