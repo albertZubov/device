@@ -46,7 +46,16 @@ a {
 
 .site-navigation,
 .user-navigation,
-.catalog {
+.catalog,
+.detailed-description,
+.user-footer-navigation,
+.footer-conditions-working,
+.breadcrumbs,
+.color-monopods,
+.bluetooth-existence,
+.sorting-types,
+.catalog-list,
+.pagination {
 	list-style: none;
 }
 .site-navigation a,
@@ -78,14 +87,12 @@ a {
 	font-size: 47px;
 	line-height: 56px;
 }
-.detailed-description {
-	list-style: none;
-}
 .contents a,
 .information a,
 .сontacts a,
 .modal-contact .button,
-.footer-conditions-working {
+.footer-conditions-working,
+.filter-button {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -99,7 +106,8 @@ a {
 .information a:hover,
 .сontacts a:hover,
 .modal-contact .button:hover,
-.footer-conditions-working a:hover {
+.footer-conditions-working a:hover,
+.filter-button:hover {
 	display: inline-block;
 	width: 220px;
 	height: 40px;
@@ -111,7 +119,8 @@ a {
 .information a:active,
 .сontacts a:active,
 .modal-contact .button:active,
-.footer-conditions-working a:active {
+.footer-conditions-working a:active,
+.filter-button:active {
 	display: inline-block;
 	width: 220px;
 	height: 40px;
@@ -203,19 +212,16 @@ a {
 	height: auto;
 }
 
-.contents-conditions h2 {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-weight: 800;
-	font-size: 47px;
-	line-height: 48px;
-}
 .stils-icon-delivery {
 	background: url(../img/delivery.svg) no-repeat right center;
 }
 .partners {
 	opacity: 0.2;
 }
-.information h2, .сontacts h2 {
+.information h2,
+.сontacts h2,
+.contents-conditions h2,
+.content-monopods h1 {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 47px;
@@ -231,6 +237,10 @@ a {
 .cellar-site {
 	background-color: #464646;
 	color: #ffffff;
+	/*Временные значения*/
+	width: auto;	
+	height: auto;
+	/*Временные значения*/
 }
 .cellar-site a{
 	color: #ffffff;
@@ -239,24 +249,19 @@ a {
 .sign {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
-	color: #ffc600;
+	color: #000000;
 	text-decoration: none;
 	font-size: 48px;
 }
-.header-logo {
-	font-family: "Gilroy", Arial, sans-serif;
-	font-weight: 800;
-	color: #000000;
-}
-.header-logo:hover {
+
+.sign:hover {
 	opacity: 0.6;
 }
-.header-logo:active {
+.sign:active {
 	opacity: 0.3;
 }
-
-.user-footer-navigation, .footer-conditions-working {
-	list-style: none;
+.user-footer .footer-logo {
+	color: #ffc600;
 }
 .user-footer-navigation a {
 	color: #ffffff;
@@ -299,8 +304,67 @@ a {
 .login-checkbox:focus {
 	color: #663d15;
 }
-.modal-contact .button {
+.modal-contact .button,
+.filter-button {
 	background: transparent;
 	border:none;
 	background: url("../img/layer7.png") no-repeat center center;
+}
+
+
+
+/*Стилизация Каталога*/
+.breadcrumbs a,
+.breadcrumbs li,
+.sorting-types a {
+	font-size: 14px;
+	color: #bcbcbc;
+}
+.filters h2, .sorting h2 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+}
+.filters h2{
+	width: 468px;
+	height: 70px;
+	background-color: #dbdbdb;
+}
+.filter legend {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+}
+.filters {
+	width: 468px;
+	height: 1287px;
+	background-color: #efefef;
+}
+.catalog-item h3 {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+}
+.price {
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+.pagination {
+	width: 760px;
+	height: 70px;
+	background-color: #ebebeb;
+	text-align: center;
+	line-height: 70px;
+}
+.pagination li {
+	display: inline-block;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	letter-spacing: 3.2px;
+	text-transform: uppercase;
 }

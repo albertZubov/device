@@ -2,32 +2,35 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet"  href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>DEVICE</title>
 </head>
 <body>
 	<header class="main-header container">
 		<nav class="main-navigation">
-			<a class="sign header-logo">Device</a>
+			<a class="sign header-logo" href="#0">Device</a>
 			<form action="#0" method="get">
 				<input name="search" placeholder="Поиск по сайту" type="search">
 				<button type="submit">Отправить</button>
 			</form>
 			<ul class="user-navigation">
 				<li class="login-icon">Валентин Петухов</li>
-				<li class="login-link">Выйти</li>
+				<li class="login-link"><a href="#0">Выйти</a></li>
 				<li class="comparison-link">Сравнить</li>
 				<li class="basket-link">Корзина</li>
 			</ul>	
 			<ul class="site-navigation">
 				<li class="site-navigation-icon"><a href="#0">Каталог товаров</a>
-					<ul class="catalog">
+					<!-- <ul class="catalog">
 						<li><a href="#0">Виртуальная реальность</a></li>
 						<li><a href="#0">Моноподы для селфи</a></li>
 						<li><a href="#0">Экшн-камеры</a></li>
 						<li><a href="#0">Фитнес браслеты</a></li>
 						<li><a href="#0">Умные часы</a></li>
 						<li><a href="#0">Квадракоптеры</a></li>
-					</ul>
+					</ul> -->
 				</li>
 				<li><a href="#0">Доставка</a></li>
 				<li><a href="#0">Гарантия</a></li>
@@ -59,7 +62,7 @@
 					</fieldset>
 					<fieldset>
 						<legend>Цвет</legend>
-						<ul>
+						<ul class="color-monopods">
 							<li class="filter-option">
 								<label for="filter-black">Черный</label>
 								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
@@ -84,7 +87,7 @@
 					</fieldset>
 					<fieldset>
 						<legend>Bluetooth</legend>
-						<ul>
+						<ul class="bluetooth-existence">
 							<li class="filter-option">
 								<label for="filter-yes">Есть</label>
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-yes" id="filter-yes" value="yes" checked>
@@ -176,10 +179,10 @@
 	<footer class="main-footer">
 		<div class="cellar-site container">
 			<div class="user-footer"> 
-				<a class="sign footer-logo">Device</a>
+				<a class="sign footer-logo" href="#0">DEVICE</a>
 				<ul class="user-footer-navigation">
 					<li class="login-icon">Валентин Петухов</li>
-					<li class="login-link">Выйти</li>
+					<li class="login-link"><a href="#0">Выйти</a></li>
 					<li class="comparison-link">Сравнить</li>
 					<li class="basket-link">Корзина</li>
 				</ul>
@@ -187,19 +190,19 @@
 			<div class="footer-conditions">
 				<p class="adress">г. Москва, ул. Строителей, 15</p>
 				<ul class="footer-conditions-working">
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Контакты</li>
+					<li><a href="#0">Доставка</a></li>
+					<li><a href="#0">Гарантия</a></li>
+					<li><a href="#0">Контакты</a></li>
 				</ul>
 				<p>Тел. +7(495)495-95-95</p>
 			</div>
 			<div class="footer-social">
-				<a class="social-button facebook-icon" href="#0">Фейсбук<img src="instagram.svg" alt="Фейсбук"></a>
-				<a class="social-button instagram-icon" href="#0">Инстаграм<img src="fb.svg" alt="Инстаграмм"></a>
-				<a class="social-button twitter-icon" href="#0">Твиттер<img src="twitter.svg" alt="Твиттер"></a>
+				<a class="social-button facebook-icon" href="#0">Фейсбук<img src="img/instagram.svg" alt="Фейсбук"></a>
+				<a class="social-button instagram-icon" href="#0">Инстаграм<img src="img/fb.svg" alt="Инстаграмм"></a>
+				<a class="social-button twitter-icon" href="#0">Твиттер<img src="img/twitter.svg" alt="Твиттер"></a>
 			</div>
-			<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" alt="Логотип Академии"></a
-			</div>
-		</footer>
-	</body>
-	</html>
+				<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" alt="Логотип Академии"></a>
+		</div>
+	</footer>
+</body>
+</html>
