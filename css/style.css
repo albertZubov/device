@@ -26,7 +26,6 @@ body {
 	background-color: #f7e296;
 	font-size: 18px;
 	line-height: 24px;
-	text-transform: uppercase;
 }
 a {
 	text-decoration: none;
@@ -34,14 +33,16 @@ a {
 .user-navigation, .search-form {
 	font-size: 15px;
 	line-height: 30px;
-	text-transform: none;
 }
+
+
 .site-navigation {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	letter-spacing: 3.6px;
 	font-size: 18px;
 	line-height: 24px;
+	text-transform: uppercase;
 }
 
 .site-navigation,
@@ -250,8 +251,8 @@ a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	color: #000000;
-	text-decoration: none;
 	font-size: 48px;
+	text-transform: uppercase;
 }
 
 .sign:hover {
@@ -355,7 +356,6 @@ a {
 }
 .pagination {
 	width: 760px;
-	height: 70px;
 	background-color: #ebebeb;
 	text-align: center;
 	line-height: 70px;
