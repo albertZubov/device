@@ -11,18 +11,19 @@
 	<header class="main-header container">
 		<nav class="main-navigation">
 			<a class="sign header-logo" href="#0">Device</a>
-			<form class="search-form" action="#0" method="post">
-				<input name="search" placeholder="Поиск по сайту" type="search">
-				<button type="submit">Отправить</button>
-			</form>
-			<ul class="user-navigation">
-				<li>
-					<a class="login-link" href="login.html">Войти</a></li>
+			<div class="search-user-navigation">
+				<form class="search-form" action="#0" method="post">
+					<button type="submit">Отправить</button>
+					<input name="search" placeholder="Поиск по сайту" type="search">
+				</form>
+				<ul class="user-navigation">
+					<li><a class="login-link" href="login.html">Войти</a></li>
 					<li><a class="comparison-link" href="#0"></a> Сравнить</li>
 					<li><a class="basket-link" href="#0"></a>Корзина</li>
-				</ul>	
-				<ul class="site-navigation">
-					<li class="site-navigation-icon"><a href="#0">Каталог товаров</a>
+				</ul>
+			</div>
+			<ul class="site-navigation">
+				<li class="site-navigation-icon"><a href="#0">Каталог товаров</a>
 						<!-- <ul class="catalog">
 							<li><a href="#0">Виртуальная реальность</a></li>
 							<li><a href="#0">Моноподы для селфи</a></li>
@@ -32,22 +33,17 @@
 							<li><a href="#0">Квадракоптеры</a></li>
 						</ul> -->
 					</li>
-					<li><a href="#0">Доставка</a></li>
-					<li><a href="#0">Гарантия</a></li>
-					<li><a href="#0">Контакты</a></li>
+					<div class="site-navigation-option">
+						<li><a href="#0">Доставка</a></li>
+						<li><a href="#0">Гарантия</a></li>
+						<li><a href="#0">Контакты</a></li>
+					</div>
 				</ul>
 			</nav>
 		</header>
 		<main class="main-contents">
 			<section class="advertisement container">
-				<div class="slide-radio">
-					<input class="visually-hidden" type="radio" name="sliders" id="selfi">
-					<label for="selfi">Селфи-палка</label>
-					<input class="visually-hidden" type="radio" name="sliders" id="bracelet">
-					<label for="bracelet">Фитнес-браслет</label>
-					<input class="visually-hidden" type="radio" name="sliders" id="quadcopter">
-					<label for="quadcopter">Квадракоптер</label>
-				</div>
+				
 				<div class="slide">
 					<div class="picture">
 						<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
@@ -57,7 +53,17 @@
 						<p>
 							Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл) метров длиной и весом всего 5 килограмм.
 						</p>
-						<a href="#0">Подробнее</a>
+						<div class="description">
+							<a href="#0">Подробнее</a>
+							<div class="slide-radio">
+								<input class="visually-hidden" type="radio" name="sliders" id="selfi">
+								<label for="selfi">Селфи-палка</label>
+								<input class="visually-hidden" type="radio" name="sliders" id="bracelet">
+								<label for="bracelet">Фитнес-браслет</label>
+								<input class="visually-hidden" type="radio" name="sliders" id="quadcopter">
+								<label for="quadcopter">Квадракоптер</label>
+							</div>
+						</div>
 						<ul class="detailed-description">
 							<li>8.5 м
 								<span>Длина палки</span>
@@ -195,7 +201,7 @@
 					<a class="social-button instagram-icon" href="#0">Инстаграм<img src="img/fb.svg" alt="Инстаграмм"></a>
 					<a class="social-button twitter-icon" href="#0">Твиттер<img src="img/twitter.svg" alt="Твиттер"></a>
 				</div>
-					<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" alt="Логотип Академии"></a>
+				<a href="https://htmlacademy.ru" class="akademy">Академия<img src="img/logo-html.svg" alt="Логотип Академии"></a>
 			</div>
 		</footer>
 		<section class="modal modal-contact">
