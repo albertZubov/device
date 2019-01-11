@@ -20,7 +20,10 @@ body {
 	font-size: 15px;
 	line-height: 30px;
 	background-color: #ffffff;
-
+}
+img {
+	width: 100%;
+	height: auto;
 }
 .main-navigation {
 	background-color: #f7e296;
@@ -42,8 +45,38 @@ a {
 .filter .filter-button {
 	background-color: transparent;
 	border: none;
-
 }
+.search-form input[type="search"] {
+	margin-left: 35px;
+}
+.search-form input[type="search"]:focus {
+	outline: none;
+}
+.search-form {
+	position: relative;
+}
+.search-form button[type="submit"] {
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+	cursor: pointer;
+}
+.search-form button[type="submit"]::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 7px;
+	left: 3px;
+	background: url("../img/search.svg") no-repeat 0 0;
+}
+
 .briefly-conditions ul button:visited {
 	content: "";
 	position: absolute;
@@ -360,7 +393,6 @@ a {
 }
 .button {
 	padding: 0 45px;
-	display: inline-block;
 	align-self: flex-start;
 }
 
@@ -468,15 +500,43 @@ a {
 	padding: 0;
 	width: 540px;
 }
-
 .user-navigation li:first-child {
 	margin-right: auto;
+	padding-left: 25px;
 }
 .user-navigation li:last-child {
 	margin-left: 60px;
 }
-
-
+.user-navigation a {
+	position: relative;
+}
+.basket-link::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 4px;
+	left: -22px;
+	background: url("../img/cart.svg") no-repeat 0 0;
+}
+.comparison-link::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 6px;
+	left: -20px;
+	background: url("../img/compare.svg") no-repeat 0 0;
+}
+.login-link::before {
+	content: "";
+	width: 13px;
+	height: 12px;
+	position: absolute;
+	top: 4px;
+	left: -25px;
+	background: url("../img/user.svg") no-repeat 0 0;
+}
 .search-user-navigation {
 	display: flex;
 	flex-direction: row;
@@ -519,10 +579,61 @@ a {
 	margin-top: -100px;
 	padding-bottom: 105px;
 }
-
+.slide {
+	display: none;
+}
+.slide-01 .picture {
+	padding-left: 30px;
+}
+.slide-02 .picture {
+	padding-left: 55px;
+}
+.slide-03 .picture {
+	padding-right: 30px;
+}
 .contents {
+	position: relative;
 	width: 540px;
-	padding-top: 70px;
+	margin-top: 70px;
+
+}
+.contents::before {
+	content: "";
+	width: 100px;
+	height: 7px;
+	position: absolute;
+	top: -40px;
+	background-color: #ffffff;
+}
+.slide-01 .contents::after {
+	content: "01";
+	position: absolute;
+	top: -19px;
+	right: -12px;
+	font-size: 180px;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	color: #ffffff;
+}
+.slide-02 .contents::after {
+	content: "02";
+	position: absolute;
+	top: -19px;
+	right: -12px;
+	font-size: 180px;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	color: #ffffff;
+}
+.slide-03 .contents::after {
+	content: "03";
+	position: absolute;
+	top: -19px;
+	right: -12px;
+	font-size: 180px;
+	font-family: "Gilroy", Arial, sans-serif;
+	font-weight: 800;
+	color: #ffffff;
 }
 .contents p {
 	margin-bottom: 55px;
@@ -539,13 +650,23 @@ a {
 .slide-radio {
 	margin-left: auto;
 	margin-right: 20px;
+	font-size: 0;
 }
-.slide-radio input {
-	margin-left: 20px;
+.slide-radio input:checked + label {
+	background-color: black;
 }
 .slide-radio label {
-	font-size: 0;
-	line-height: 0;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 20px;
+
+	vertical-align: middle;
+
+	background-color: transparent;
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
 }
 .detailed-description {
 	display: flex;
@@ -741,4 +862,34 @@ fieldset>div {
 	border-top: 3px solid black;
 	padding-top: 10px;
 	padding-bottom: 30px;
+}
+/*Скрытие кнопок*/
+button[type="submit"] {
+	width: 0px;
+	height: 0px;
+	margin: 0px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+
+	clip: rect(0, 0, 0, 0);
+}
+#selfi:checked ~ .slide-01,
+#bracelet:checked ~ .slide-02,
+#quadcopter:checked ~ .slide-03 {
+	display: flex;
+}
+#selfi:checked ~ .slide label[for="selfi"],
+#bracelet:checked ~ .slide label[for="bracelet"],
+#quadcopter:checked ~ .slide label[for="quadcopter"] {
+	background-color: black;
 }

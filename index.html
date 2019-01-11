@@ -13,13 +13,13 @@
 			<a class="sign header-logo" href="#0">Device</a>
 			<div class="search-user-navigation">
 				<form class="search-form" action="#0" method="post">
-					<button type="submit">Отправить</button>
+					<button class="visually-hidden" type="submit">Отправить</button>
 					<input name="search" placeholder="Поиск по сайту" type="search">
 				</form>
 				<ul class="user-navigation">
 					<li><a class="login-link" href="login.html">Войти</a></li>
-					<li><a class="comparison-link" href="#0"></a> Сравнить</li>
-					<li><a class="basket-link" href="#0"></a>Корзина</li>
+					<li><a class="comparison-link" href="#0">Сравнить</a></li>
+					<li><a class="basket-link" href="#0">Корзина</a></li>
 				</ul>
 			</div>
 			<div class="site-navigation">
@@ -43,8 +43,10 @@
 			</header>
 			<main class="main-contents">
 				<section class="advertisement container">
-
-					<div class="slide">
+					<input class="visually-hidden" type="radio" name="sliders" id="selfi" checked>
+					<input class="visually-hidden" type="radio" name="sliders" id="bracelet">
+					<input class="visually-hidden" type="radio" name="sliders" id="quadcopter">
+					<div class="slide slide-01">
 						<div class="picture">
 							<img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
 						</div>
@@ -56,11 +58,8 @@
 							<div class="description">
 								<a href="#0">Подробнее</a>
 								<div class="slide-radio">
-									<input class="visually-hidden" type="radio" name="sliders" id="selfi">
 									<label for="selfi">Селфи-палка</label>
-									<input class="visually-hidden" type="radio" name="sliders" id="bracelet">
 									<label for="bracelet">Фитнес-браслет</label>
-									<input class="visually-hidden" type="radio" name="sliders" id="quadcopter">
 									<label for="quadcopter">Квадракоптер</label>
 								</div>
 							</div>
@@ -77,67 +76,81 @@
 							</ul>
 						</div>
 					</div>
-				<!-- <div class="slide">
-					<div class="picture">
-						<img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+					<div class="slide slide-02">
+						<div class="picture">
+							<img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+						</div>
+						<div class="contents">
+							<h2>Худеем <br> правильно!</h2>
+							<p>
+								Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+							</p>
+							<div class="description">
+								<a href="#0">Подробнее</a>
+								<div class="slide-radio">
+									<label for="selfi">Селфи-палка</label>
+									<label for="bracelet">Фитнес-браслет</label>
+									<label for="quadcopter">Квадракоптер</label>
+								</div>
+							</div>
+							<ul class="detailed-description">
+								<li>48 часов
+									<span>Без подзарядки</span>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="contents">
-						<h2>Худеем правильно</h2>
-						<p>
-							Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-						</p>
-						<a href="#0">Подробнее</a>
-						<ul class="detailed-description">
-							<li>48 часов
-								<span>Без подзарядки</span>
-							</li>
-						</ul>
+					<div class="slide slide-03">
+						<div class="picture">
+							<img src="img/slider-3.png" width="345" height="485" alt="Квадракоптер с лазером">
+						</div>
+						<div class="contents">
+							<h2>Порхает как бабочка, жалит как пчела!</h2>
+							<p>
+								Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+							</p>
+							<div class="description">
+								<a href="#0">Подробнее</a>
+								<div class="slide-radio">
+									<label for="selfi">Селфи-палка</label>
+									<label for="bracelet">Фитнес-браслет</label>
+									<label for="quadcopter">Квадракоптер</label>
+								</div>
+							</div>
+							<ul class="detailed-description">
+								<li>800 м
+									<span>Дальность полета</span>
+								</li>
+								<li>50 м
+									<span>Радиус поражения</span>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="slide">
-					<div class="picture">
-						<img src="img/slider-3.png" width="345" height="485" alt="Квадракоптер с лазером">
-					</div>
-					<div class="contents">
-						<h2>Порхает как бабочка, жалит как пчела!</h2>
-						<p>
-							Этот обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-						</p>
-						<a href="#0">Подробнее</a>
-						<ul class="detailed-description">
-							<li>800 м
-								<span>Дальность полета</span>
-							</li>
-							<li>50 м
-								<span>Радиус поражения</span>
-							</li>
-						</ul>
-					</div>
-				</div> -->
-			</section>
-			<section class="products container">
-				<ul class="catalog-products">
-					<li class="visual-icon"><a href="#0">Виртуальная <br> реальность</a></li>
-					<li class="monopod-icon"><a href="#0">Монопады <br> для селфи</a></li>
-					<li class="camera-icon"><a href="#0">Экшн-камеры</a></li>
-					<li class="bracelet-icon"><a href="#0">Фитнес-браслеты</a></li>
-					<li class="watch-icon"><a href="#0">Умные часы</a></li>
-					<li class="quadcopters-icon"><a href="#0">Квадракоптеры</a></li>
-				</ul>
-			</section>
-			<section class="conditions">
-				<section class="conditions-working container">
-					<div class="briefly-conditions">
-						<ul>
-							<li class="active"><button type="button">Доставка</button></li>
-							<li><button type="button">Гарантия</button></li>
-							<li><button type="button">Кредит</button></li>
-						</ul>
-					</div>
-					<div class="detailed-conditions">
-						<div class="contents-conditions stils-icon-delivery">
-							<h2>Доставка</h2>
-							<p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо</br> заработаем, поднимая его на ваш этаж.</p>
+				</section>
+				<section class="products container">
+					<ul class="catalog-products">
+						<li class="visual-icon"><a href="#0">Виртуальная <br> реальность</a></li>
+						<li class="monopod-icon"><a href="#0">Монопады <br> для селфи</a></li>
+						<li class="camera-icon"><a href="#0">Экшн-камеры</a></li>
+						<li class="bracelet-icon"><a href="#0">Фитнес-браслеты</a></li>
+						<li class="watch-icon"><a href="#0">Умные часы</a></li>
+						<li class="quadcopters-icon"><a href="#0">Квадракоптеры</a></li>
+					</ul>
+				</section>
+				<section class="conditions">
+					<section class="conditions-working container">
+						<div class="briefly-conditions">
+							<ul>
+								<li class="active"><button type="button">Доставка</button></li>
+								<li><button type="button">Гарантия</button></li>
+								<li><button type="button">Кредит</button></li>
+							</ul>
+						</div>
+						<div class="detailed-conditions">
+							<div class="contents-conditions stils-icon-delivery">
+								<h2>Доставка</h2>
+								<p>Мы с удовольствием доставим ваш товар прямо к вашему <br>подъезду совершенно бесплатно! Ведь мы неплохо</br> заработаем, поднимая его на ваш этаж.</p>
 						<!-- </div>
 						<div class="contents-conditions stils-icon-guarantee">
 							<h2>Гарантия</h2>
@@ -233,6 +246,6 @@
 			</p>
 			<button class="modal-close" type="button">Закрыть</button>
 		</section>
-		 -->
-	</body>
-	</html>
+	-->
+</body>
+</html>
