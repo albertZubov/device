@@ -134,6 +134,8 @@ a {
 }
 
 .contents h2 {
+	position: relative;
+	z-index: 1;
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 47px;
@@ -498,7 +500,7 @@ a {
 	margin: 0;
 	margin-left: auto;
 	padding: 0;
-	width: 540px;
+	width: 500px;
 }
 .user-navigation li:first-child {
 	margin-right: auto;
@@ -557,7 +559,7 @@ a {
 	margin: 0;
 	margin-left: auto;
 	padding: 0;
-	width: 540px;
+	width: 500px;
 }
 .site-navigation-option li:first-child {
 	margin-right: 40px;
@@ -588,12 +590,16 @@ a {
 .slide-02 .picture {
 	padding-left: 55px;
 }
+.slide-03 {
+	padding-left: 0;
+}
 .slide-03 .picture {
-	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 50px;
 }
 .contents {
 	position: relative;
-	width: 540px;
+	width: 500px;
 	margin-top: 70px;
 
 }
@@ -644,8 +650,10 @@ a {
 	padding-bottom: 40px;
 }
 .description a {
-	padding: 0 45px;
-	line-height: 1.7;
+	line-height: 40px;
+	width: 220px;
+	text-align: center;
+	height: 40px;
 }
 .slide-radio {
 	margin-left: auto;
@@ -671,13 +679,14 @@ a {
 .detailed-description {
 	display: flex;
 	padding-left: 0;
-	flex-direction: row;
-	justify-content: space-between;
-	padding-right: 55px;
 }
 .detailed-description li {
 	display: flex;
 	flex-direction: column;
+	margin-right: 80px;
+}
+.detailed-description li:last-child {
+	margin-right: 0;
 }
 .conditions {
 	position: relative;
