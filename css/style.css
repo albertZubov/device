@@ -48,26 +48,43 @@ a {
 }
 .search-form input[type="search"] {
 	margin-left: 35px;
+	opacity: 0.3;
+	width: 340px;
+}
+.search-form input[type="search"]:hover {
+	opacity: 0.6;
 }
 .search-form input[type="search"]:focus {
 	outline: none;
+	opacity: 1;
+	border-bottom: 2px solid black;
 }
+.search-form input[type="search"]:focus ~ button[type="submit"] {
+	display: block;
+	position: absolute;
+	top: -24px;
+	right: 0;
+	background-color: #f7e296;
+	border: 2px solid black;
+	padding: 15px;
+	cursor: pointer;
+}
+
 .search-form {
 	position: relative;
 }
 .search-form button[type="submit"] {
-	width: 0px;
-	height: 0px;
-	margin: 0px;
-	border: 0;
-	padding: 0;
-
-	white-space: nowrap;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-	cursor: pointer;
+	display: none;
 }
-.search-form button[type="submit"]::before {
+.search-form input[type="search"]:focus ~ button[type="submit"]:hover {
+	background-color: black;
+	color: white;
+}
+.search-form input[type="search"]:focus ~ button[type="submit"]:active {
+	background-color: black;
+	color: rgba(255,255,255, 0.5);
+}
+.search-form::before {
 	content: "";
 	width: 16px;
 	height: 16px;
@@ -233,6 +250,7 @@ a {
 }
 .catalog-products li a{
 	display: block;
+	color
 }
 .catalog-products li {
 	width: 160px;
@@ -569,7 +587,7 @@ a {
 }
 .header-logo {
 	display: inline-block;
-	padding-left: 60px;
+	margin-left: 60px;
 	transform: translateY(-15px);
 }
 .slide {
@@ -873,7 +891,7 @@ fieldset>div {
 	padding-bottom: 30px;
 }
 /*Скрытие кнопок*/
-button[type="submit"] {
+/*button[type="submit"] {
 	width: 0px;
 	height: 0px;
 	margin: 0px;
@@ -883,22 +901,22 @@ button[type="submit"] {
 	white-space: nowrap;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
-.visually-hidden {
-	position: absolute;
+	}*/
+	.visually-hidden {
+		position: absolute;
 
-	width: 1px;
-	height: 1px;
+		width: 1px;
+		height: 1px;
 
-	clip: rect(0, 0, 0, 0);
-}
-#selfi:checked ~ .slide-01,
-#bracelet:checked ~ .slide-02,
-#quadcopter:checked ~ .slide-03 {
-	display: flex;
-}
-#selfi:checked ~ .slide label[for="selfi"],
-#bracelet:checked ~ .slide label[for="bracelet"],
-#quadcopter:checked ~ .slide label[for="quadcopter"] {
-	background-color: black;
-}
+		clip: rect(0, 0, 0, 0);
+	}
+	#selfi:checked ~ .slide-01,
+	#bracelet:checked ~ .slide-02,
+	#quadcopter:checked ~ .slide-03 {
+		display: flex;
+	}
+	#selfi:checked ~ .slide label[for="selfi"],
+	#bracelet:checked ~ .slide label[for="bracelet"],
+	#quadcopter:checked ~ .slide label[for="quadcopter"] {
+		background-color: black;
+	}
