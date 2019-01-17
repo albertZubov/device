@@ -138,12 +138,16 @@
 			</ul>
 		</section>
 		<section class="conditions">
+
 			<section class="conditions-working container">
+				<input type="radio" id="button-delivery" name="conditions-working" checked>
+				<input type="radio" id="button-guarantee" name="conditions-working">
+				<input type="radio" id="button-credit" name="conditions-working">
 				<div class="briefly-conditions">
 					<ul>
-						<li class="active"><button class="button-delivery" type="button" checked>Доставка</button></li>
-						<li><button class="button-guarantee" type="button">Гарантия</button></li>
-						<li><button class="button-credit" type="button">Кредит</button></li>
+						<li><button class="button-delivery" type="button" checked><label for="button-delivery">Доставка</label></button></li>
+						<li><button class="button-guarantee" type="button"><label for="button-guarantee">Гарантия</label></button></li>
+						<li><button class="button-credit" type="button"><label for="button-credit">Кредит</label></button></li>
 					</ul>
 				</div>
 				<div class="detailed-conditions">

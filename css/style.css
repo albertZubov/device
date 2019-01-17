@@ -319,9 +319,9 @@ a {
 	background-color: #000000;
 	color: #f7e296;
 }
-#button-delivery:checked ~ .contents-conditions-1,
-#button-guarantee:checked ~ .contents-conditions-2,
-#button-credit:checked ~ .contents-conditions-3 {
+#button-delivery:checked ~ .detailed-conditions .stils-icon-delivery,
+#button-guarantee:checked ~ .detailed-conditions .stils-icon-guarantee,
+#button-credit:checked ~ .detailed-conditions .stils-icon-credit {
 	display: block;
 }
 
