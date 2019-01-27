@@ -454,12 +454,7 @@ a {
 	font-size: 14px;
 	color: black;
 }
-.sorting-types a,
-.filter-cost button::after {
-	font-size: 14px;
-	opacity: 0.6;
-	color: black;
-}
+
 .filters h2, .sorting h2 {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
@@ -880,8 +875,10 @@ img[src*="logo-"] {
 .user-footer-navigation a {
 	margin-left: 40px;
 }
-.user-footer-navigation .login-link {
-	margin-left: 15px;
+.user-footer-navigation .login-link,
+.user-navigation .login-link{
+	margin-left: 20px;
+	opacity: 0.3;
 }
 .footer-conditions {
 	display: flex;
@@ -938,6 +935,16 @@ img[src*="logo-"] {
 .social-button:hover,
 .breadcrumbs a:hover {
 	opacity: 0.6;
+}
+.sorting-types a{
+	font-size: 14px;
+	opacity: 0.3;
+	color: black;
+}
+.sorting-types .active,
+.display .active,
+.pagination .active {
+	opacity: 1;
 }
 .sorting-types a:hover {
 	opacity: 1;
@@ -1078,14 +1085,14 @@ fieldset>div {
 	margin-bottom: 50px;
 }
 .filter-cost button {
-    font-size: 0;
-    width: 20px;
-    height: 23px;
-    background: url(../img/filter-button.svg) no-repeat center center;
-    cursor: pointer;
-    border: none;
-    z-index: 1;
-    position: absolute;
+	font-size: 0;
+	width: 20px;
+	height: 23px;
+	background: url(../img/filter-button.svg) no-repeat center center;
+	cursor: pointer;
+	border: none;
+	z-index: 1;
+	position: absolute;
 }
 .filter-cost button::after {
 	content: attr(data-text);
@@ -1094,7 +1101,9 @@ fieldset>div {
 	left: 0;
 	bottom: -15px;
 	white-space: nowrap;
-	opacity: 0.3;
+	font-size: 14px;
+	opacity: 0.2;
+	color: black;
 }
 .filter-cost button:last-child::after {
 	transform: translateX(-50%);
