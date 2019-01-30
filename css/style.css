@@ -515,14 +515,16 @@ a {
 	padding: 0;
 }
 .pagination li {
-	display: inline-block;
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 16px;
 	letter-spacing: 3.2px;
 	text-transform: uppercase;
-	padding: 20px;
 	opacity: 0.3;
+}
+.pagination li a {
+	display: inline-block;
+	padding: 20px;
 }
 .pagination li:hover {
 	opacity: 0.6;
@@ -780,9 +782,8 @@ a {
 	position: absolute;
 	width: 100%;
 	height: 250px;
-	top: 35px;
+	top: 65px;
 	z-index: -1;
-	transform: translateY(30px);
 }
 .conditions-working {
 	display: flex;
