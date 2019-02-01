@@ -508,6 +508,7 @@ a {
 	font-family: "Gilroy", Arial, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
+	margin: 0;
 }
 .guide-catalog-item {
 	display: none;
@@ -525,7 +526,8 @@ a {
 	cursor: pointer;
 }
 .guide-catalog-item .add-comparison {
-	outline: none;
+	opacity: 0.6;
+	z-index: 2;
 }
 .content-item {
 	position: relative;
@@ -939,9 +941,13 @@ img[src*="logo-"] {
 .footer-conditions-working a:hover {
 	opacity: 0.6;
 }
-.footer-conditions-working a:active,
-.guide-catalog-item .add-comparison:active {
+.footer-conditions-working a:active {
 	opacity: 0.3;
+}
+.guide-catalog-item .add-comparison:active,
+.guide-catalog-item .add-comparison:focus {
+	color: rgba(0,0,0,0.3);
+	outline: none;
 }
 .footer-social {
 	display: flex;
@@ -979,9 +985,7 @@ img[src*="logo-"] {
 	opacity: 0.3;
 }
 .social-button:hover,
-.breadcrumbs a:hover,
-.guide-catalog-item .add-comparison
- {
+.breadcrumbs a:hover {
 	opacity: 0.6;
 }
 .sorting-types a{
@@ -1130,7 +1134,8 @@ img[src*="logo-"] {
 .about-item {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+	padding-top: 20px;
 }
 fieldset>div {
 	border-top: 2px solid black;
