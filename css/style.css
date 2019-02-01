@@ -394,6 +394,7 @@ a {
 	color: #000000;
 	font-size: 48px;
 	text-transform: uppercase;
+	line-height: 48px;
 }
 
 .sign:hover {
@@ -683,7 +684,7 @@ a {
 .header-logo {
 	display: inline-block;
 	margin-left: 60px;
-	transform: translateY(-15px);
+	transform: translateY(-23px);
 }
 .slide {
 	display: flex;
@@ -910,9 +911,17 @@ img[src*="logo-"] {
 	margin-left: 40px;
 }
 .user-footer-navigation .login-link,
-.user-navigation .login-link{
+.user-navigation .login-link-out{
 	margin-left: 20px;
 	opacity: 0.3;
+}
+.user-footer-navigation .login-link:hover,
+.user-navigation .login-link-out:hover {
+	opacity: 1;
+}
+.user-footer-navigation .login-link:active,
+.user-navigation .login-link-out:active {
+	opacity: 0.6;
 }
 .footer-conditions {
 	display: flex;
@@ -962,7 +971,9 @@ img[src*="logo-"] {
 	background: url("../img/twitter.svg") no-repeat center center;
 }
 .social-networks a {
-	padding: 20px 30px;
+	width: 35px;
+	height: 35px;
+	margin: 0px 10px;
 }
 .social-button {
 	opacity: 0.3;
@@ -975,6 +986,7 @@ img[src*="logo-"] {
 }
 .sorting-types a{
 	font-size: 14px;
+	line-height: 14px;
 	opacity: 0.3;
 	color: black;
 }
@@ -1082,16 +1094,23 @@ img[src*="logo-"] {
 }
 .catalog-menu { 
 	position: absolute;
-	top: 20px;
+	top: 23px;
 	left: 0;
+	right: 0;
 	background-color: #f7e296;
 	padding: 0;
 	margin: 0;
-	padding: 20px;
 	display: none;
+	padding: 15px 0;
+	padding-left: 20px;
+
 }
 .catalog-menu:hover {
 	display: flex;
+}
+.catalog-menu ul li {
+	margin-bottom: 5px;
+	margin-right: 30px;
 }
 .site-navigation a:hover + .catalog-menu {
 	display: flex;
