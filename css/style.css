@@ -875,7 +875,8 @@ img[src*="logo-"] {
 	line-height: 40px;
 }
 .сontacts img {
-	padding-bottom: 125px;
+	margin-bottom: 125px;
+	cursor: pointer;
 }
 .main-footer {
 	background-color: #464646;
@@ -1264,6 +1265,10 @@ fieldset>div {
 .filter-option label:disabled {
 	opacity: 0.3;
 }
+
+
+
+/*Модалки*/
 .modal {
 	color: #000000;
 	background-color: white;
@@ -1276,8 +1281,36 @@ fieldset>div {
 	top: 120px;
 	left: 50%;
 	margin-left: -480px;
-	/*	display: none;*/
-
+	display: none;
+}
+.modal-map {
+	width: 960px;
+	height: 560px;
+	top: 120px;
+	left: 50%;
+	margin-left: -480px;
+	display: none;
+}
+.modal-map p {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
+}
+.modal-show {
+	display: flex;
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.modal-error {
+	animation: shake 0.5s;
 }
 .modal-contact form {
 	display: flex;
@@ -1305,7 +1338,7 @@ fieldset>div {
 .modal-contact form input:focus,
 .modal-contact form textarea:focus {
 	border: none;
-	outline: none;
+	/*	outline: none;*/
 }
 .modal-contact form>.appointment-item {
 	width: 100%;
@@ -1316,7 +1349,7 @@ fieldset>div {
 	height: 120px;
 	padding-top: 15px;
 }
-.modal-contact .modal-close {
+.modal-close {
 	top: 20px;
 	right: 20px;
 	position: absolute;
@@ -1326,4 +1359,55 @@ fieldset>div {
 	font-size: 0;
 	line-height: 0;
 	cursor: pointer;
+	border: none;
+/*	animation: close 2s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;*/
 }
+.modal-map .modal-close {
+	opacity: 0.5;
+	z-index: 3;
+}
+
+
+/*Анимация*/
+@keyframes bounce {
+	0% {
+		transform: translateX(-2000px) rotate(0);
+	}
+
+	100% {
+		transform: translateX(0) rotate(360deg);
+	}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+/*@keyframes close {
+	0% {
+		display: none;
+	}
+	100% {
+		display: block;
+	}
+}*/
