@@ -199,7 +199,7 @@ a {
     line-height: 56px
 }
 
-.briefly-conditions ul li,.contents a,.filter .filter-button,.footer-conditions-working,.guide-catalog-item .add-basket,.information .button,.information a,.modal-contact .button,.сontacts .button,.сontacts a {
+.briefly-conditions li,.contents a,.filter .filter-button,.footer-conditions-working,.guide-catalog-item .add-basket,.information .button,.information a,.modal-contact .button,.сontacts .button,.сontacts a {
     position: relative;
     z-index: 2;
     font-family: "Gilroy",Arial,sans-serif;
@@ -211,7 +211,7 @@ a {
     outline: 0
 }
 
-.briefly-conditions ul span::before,.contents a::before,.filter .filter-button::before,.guide-catalog-item .add-basket:before,.information a::before,.modal-contact .button::before,.сontacts a::before {
+.briefly-conditions span::before,.contents a::before,.filter .filter-button::before,.guide-catalog-item .add-basket:before,.information a::before,.modal-contact .button::before,.сontacts a::before {
     position: absolute;
     top: calc(50% - 4px);
     left: 0;
@@ -222,7 +222,7 @@ a {
     background-color: #f0c52e
 }
 
-.briefly-conditions ul span:hover,.catalog-products a:hover::before,.contents a:hover,.filter-button:hover,.guide-catalog-item .add-basket:hover,.information a:hover,.modal-contact .button:hover,.сontacts a:hover {
+.briefly-conditions span:hover,.catalog-products a:hover::before,.contents a:hover,.filter-button:hover,.guide-catalog-item .add-basket:hover,.information a:hover,.modal-contact .button:hover,.сontacts a:hover {
     background-color: #f0c52e
 }
 
@@ -257,7 +257,7 @@ a {
     line-height: 24px
 }
 
-.briefly-conditions li label,.catalog-products li a {
+.briefly-conditions label,.catalog-products a {
     display: block
 }
 
@@ -346,7 +346,7 @@ a {
     padding: 0
 }
 
-.briefly-conditions ul li {
+.briefly-conditions li {
     margin-bottom: 25px
 }
 
@@ -446,7 +446,7 @@ a {
     list-style: none
 }
 
-.information ul li {
+.information li {
     font-weight: 800;
     padding-bottom: 10px;
     position: relative
@@ -612,6 +612,7 @@ a {
     position: relative;
     height: 380px;
     margin-bottom: 32px
+    background-color: #efefef;
 }
 
 .pagination a,.price {
@@ -630,7 +631,7 @@ a {
     font-weight: 300
 }
 
-.content-item:hover .guide-catalog-item,.pagination,.pagination li a {
+.content-item:hover .guide-catalog-item,.pagination,.pagination a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -648,7 +649,7 @@ a {
     margin: 0
 }
 
-.pagination li a {
+.pagination a {
     width: 130px;
     height: 70px;
     -webkit-box-align: center;
@@ -1020,7 +1021,7 @@ a {
     opacity: .2
 }
 
-.partners a img:hover {
+.partners img:hover {
     opacity: 1;
     -webkit-filter: none;
     filter: none
@@ -1046,7 +1047,7 @@ a {
     padding-left: 35px
 }
 
-.information ul li:before {
+.information li:before {
     content: "";
     width: 5px;
     height: 5px;
@@ -1092,13 +1093,15 @@ a {
 
 .сontacts img {
     margin-bottom: 59px;
-    cursor: pointer
+    cursor: pointer;
+    background-color: #efefef;
 }
 
 .main-footer {
     background-color: #464646;
     color: #fff;
-    padding-top: 60px
+    padding-top: 60px;
+    padding-bottom: 18px;
 }
 
 .main-footer-catalog {
@@ -1380,10 +1383,11 @@ a {
     background-color: #f7e296;
     margin: 0;
     display: none;
-    padding: 15px 0 15px 20px
+    padding: 15px 0 15px 20px;
+    z-index: 2;
 }
 
-.catalog-menu ul li {
+.catalog-menu li {
     margin-bottom: 5px;
     margin-right: 30px
 }
@@ -1403,7 +1407,7 @@ a {
     margin-bottom: 6px
 }
 
-.filter fieldset legend {
+.filter legend {
     margin-bottom: 25px;
     border-top: 2px solid #000;
     width: 100%;
@@ -1605,7 +1609,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 90px 100px
+    padding: 90px 100px;
 }
 
 .modal-contact .appointment-item {
@@ -1629,30 +1633,32 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
+    margin-top: -9px;
 }
 
-.modal-contact form label {
+.modal-contact label {
     margin-bottom: 10px
 }
 
-.modal-contact form input,.modal-contact form input:focus,.modal-contact form textarea,.modal-contact form textarea:focus {
+.modal-contact input,.modal-contact input:focus,.modal-contact textarea,.modal-contact textarea:focus {
     border: 0
 }
 
 .modal-contact form>.appointment-item {
     width: 100%;
-    padding-bottom: 30px
+    padding-bottom: 24px;
+    margin-top: 17px;
 }
 
 .modal-contact textarea {
     width: auto;
-    height: 120px;
-    padding-top: 15px
+    height: 152px;
+    padding-top: 13px;
 }
 
 .modal-close {
-    top: 20px;
+    top: 24px;
     right: 20px;
     position: absolute;
     width: 60px;
@@ -1667,4 +1673,10 @@ a {
 .modal-map .modal-close {
     opacity: .5;
     z-index: 3
+}
+.appointment-item input[placeholder] {
+    margin-top: -5px;
+}
+.modal-contact .button {
+    padding: 0 35px;
 }
