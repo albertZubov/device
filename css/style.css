@@ -225,6 +225,9 @@ a {
 .briefly-conditions span:hover,.catalog-products a:hover::before,.contents a:hover,.filter-button:hover,.guide-catalog-item .add-basket:hover,.information a:hover,.modal-contact .button:hover,.сontacts a:hover {
     background-color: #f0c52e
 }
+.briefly-conditions .active span:hover {
+	background: transparent;
+}
 
 .contents a:active,.filter-button:active,.guide-catalog-item .add-basket:active,.information a:active,.modal-contact .button:active,.сontacts a:active {
     background-color: #f0c52e;
