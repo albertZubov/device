@@ -67,16 +67,6 @@
         transform: translateX(10px)
     }
 }
-@keyframes torsion {
-    50%{
-        opacity: 1;
-        pointer-events: initial;
-        position: static;
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 @keyframes emergence {
     0% {
@@ -419,10 +409,6 @@ a {
 .main-contents .advertisement {
     margin-bottom: -8px;
     counter-reset: section;
-}
-
-.advertisement .slide-02 {
-    margin-bottom: 2px
 }
 
 .catalog-products a::after {
@@ -1051,12 +1037,16 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: -100px 0 0;
-    padding: 0 60px 105px;
+    margin-bottom: 105px;
+    padding: 0 60px;
 
     position: absolute;
-    top: 53%;
+    top: 337px;
     opacity: 0;
     pointer-events: none;
+    transform: matrix3d(0.984808, 0.173648, 0, 0, -0.173648, 0.984808, 0, 0, 0, 0, 1, 0, 1951.5, 0, 0, 1);
+    transition: transform 0.8s, opacity 1.2s;
+    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
 }
 
 .slide-01 .picture {
@@ -1084,7 +1074,12 @@ a {
 .slide-03 .detailed-description li {
     margin-right: 44px
 }
-
+.advertisement .slide-02 {
+    margin-bottom: 96px;
+}
+.advertisement .slide-03 {
+    margin-bottom: 107px;
+}
 .contents {
     position: relative;
     width: 500px;
@@ -1750,8 +1745,7 @@ a {
     position: static;
     opacity: 1;
     pointer-events: initial;
-    animation: torsion 3s;
-    transform-origin: top left;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
 #bracelet:checked~.slide label[for=bracelet]::before,
